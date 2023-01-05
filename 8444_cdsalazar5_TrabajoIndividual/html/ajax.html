@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/icono4.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/stylesAjax.css">
+  <!-- BOOTSTRAP CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!--Scrooll Reveal-->
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+  <!-- BOOTSTRAP 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="../css/stylesHomePage.css">
+  <link rel="stylesheet" href="../css/styleEjemplos.css">
+  <script src="../js/funcionesEjemplos.js"></script>
+  <title>Trabajo Individual</title>
+</head>
+
+<body>
+  <main>
+    <div class="hero">
+      <div class="hero-description">
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div>
+      <header id="home">
+        <div class="w3-top w3-light-gray">
+          <div class="w3-row w3-padding w3-white">
+            <div class="w3-col s3">
+              <a href="homePage.html" class="w3-button w3-block w3-white"> <img src="../img/iconocasa.png" width="20px"
+                  height="20px"> Home</a>
+            </div>
+      </header>
+    </div><br><br>
+
+    <br>
+    <center>
+      <h1>AJAX</h1>
+    </center>
+
+    <!--Intoducción-->
+    <section id="header">
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+          <div class=" col-md-6 col-sm-6">
+
+            <p>Se refiere a un grupo de tecnologías que se utilizan para desarrollar aplicaciones web. Al combinar estas
+              tecnologías, las páginas web parece que son más receptivas puesto que los paquetes pequeños de datos se
+              intercambian con el servidor y las páginas web no se vuelven a cargar cada vez que un usuario realiza un
+              cambio de entrada. </p>
+
+            <p>Ajax se compone de las siguientes tecnologías: <br><br>
+              - XHTML y CSS para presentar información. <br>
+              - DOM (Document Object Model - modelo de objetos de documento) para visualizar e interactuar de forma
+              dinámica la información presentada. <br>
+              - El objeto XMLHttpRequest para manipular los datos de forma asíncrona con el servidor web. <br>
+              - XML, HTML y XSLT para el intercambio y la manipulación de datos. <br>
+              - Se visualiza JavaScript para enlazar solicitudes e información de datos.</p>
+
+            <p><b>AJAX es el sueño de un desarrollador, porque puede:</b> <br><br>
+
+              - Leer datos de un servidor web, después de que se haya cargado la página. <br>
+              - Actualizar una página web sin recargar la página. <br>
+              - Enviar datos a un servidor web - en segundo plano</p>
+
+          </div>
+
+        </div>
+      </div>
+      </div>
+      <br><br><br>
+    </section>
+
+    <!--Primer ejemplo-->
+
+    <section id="testimonio">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h4>Ejemplo AJAX</h4>
+        </div>
+        </p>
+
+        <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <p><b>Código</b></p>
+          <pre>
+            <code>
+              <note>
+                function Ajax() {
+                  const xhttp = new XMLHttpRequest();
+                  xhttp.onload = function() {
+                    document.getElementById("demo").innerHTML =
+                    this.responseText;
+                  }
+                  xhttp.open("GET", "ajax_info.txt");
+                  xhttp.send();
+                }        
+              </note>
+            </code> <br>
+        </pre>
+        <img src="../img/ejemploAjax.png" alt="">
+        </div>
+
+        <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <br>
+          <div id="demo">
+            <h2>The XML HttpRequest Object</h2>
+            <button type="button" onclick="loadDoc()" class="btn btn-info">Cambiar Contenido</button>
+          </div>
+          <br>
+        </div>
+
+    </section>
+    <br>
+
+  </main>
+
+
+
+</body>
+
+</html>

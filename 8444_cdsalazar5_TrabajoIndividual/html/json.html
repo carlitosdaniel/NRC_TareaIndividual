@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../img/icono4.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/stylesJson.css">
+  <!-- BOOTSTRAP CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!--Scrooll Reveal-->
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+  <!-- BOOTSTRAP 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="../css/stylesHomePage.css">
+  <link rel="stylesheet" href="../css/styleEjemplos.css">
+  <script src="../js/funcionesEjemplos.js"></script>
+  <title>Trabajo Individual</title>
+</head>
+
+<body>
+  <main>
+    <div class="hero">
+      <div class="hero-description">
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div>
+      <header id="home">
+        <div class="w3-top w3-light-gray">
+          <div class="w3-row w3-padding w3-white">
+            <div class="w3-col s3">
+              <a href="homePage.html" class="w3-button w3-block w3-white"> <img src="../img/iconocasa.png" width="20px"
+                  height="20px"> Home</a>
+            </div>
+      </header>
+    </div><br><br>
+
+
+
+
+    <h1 class="text-center">JSON</h1>
+
+
+    <!--Intoducción-->
+    <section id="header">
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+          <div class=" col-md-6 col-sm-6">
+            <p>
+              JSON es un formato que almacena información estructurada y se utiliza principalmente para transferir datos
+              entre un servidor y un cliente. El archivo es básicamente una alternativa más simple y liviana al XML
+              (Lenguaje de marcado extenso, por sus siglas en inglés) que cuenta con funciones similares. </p><br>
+
+            <p>Los desarrolladores usan JSON para trabajar con AJAX (JavaScript asíncrono y XML, por sus siglas en
+              inglés). Estos formatos funcionan bien juntos para lograr la carga asincrónica de los datos almacenados,
+              lo que significa que un sitio web puede actualizar su información sin actualizar la página.</p>
+
+            <p>Hay dos elementos centrales en un objeto JSON: claves (Keys) y valores (Values).</p>
+
+            <p><b>Keys:</b> deben ser cadenas de caracteres (strings). Como su nombre en español lo indica, estas
+              contienen una
+              secuencia de caracteres rodeados de comillas.</p>
+
+            <p><b>Values:</b> son un tipo de datos JSON válido. Puede tener la forma de un arreglo (array), objeto,
+              cadena
+              (string), booleano, número o nulo.</p>
+
+            <p>JavaScript tiene una función integrada para convertir cadenas JSON en objetos JavaScript:</p>
+
+            <p class="text-center"><b>JSON.parse()</b></p>
+
+            <p>JavaScript también tiene una función integrada para convertir un objeto en una cadena JSON:</p>
+
+            <p class="text-center"><b>JSON.stringify()</b></p>
+
+          </div>
+        </div>
+      </div>
+      <br>
+    </section>
+
+    <!--Primer ejemplo-->
+
+    <section id="testimonio">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h4>Ejemplo JSON</h4>
+        </div>
+        </p>
+
+        <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <p><b>Código</b></p>
+          <pre>
+            <code>
+              <note>
+              function Json() {
+                const obj = { name: "John", age: 30, city: "New York" };
+                const myJSON = JSON.stringify(obj);
+                document.getElementById("demo").innerHTML = myJSON;
+              }              
+              </note>
+            </code> <br>
+        </pre>
+        </div>
+
+        <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <br>
+
+          <center><button type="submit" onclick="Json()" class="btn btn-info">Intentalo ahora</button></center>
+          <p id="demo"></p>
+          <br>
+        </div>
+
+    </section>
+    <br>
+
+  </main>
+</body>
+
+</html>
